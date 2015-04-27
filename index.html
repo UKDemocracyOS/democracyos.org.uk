@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<title>DemocracyOS.org.uk</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+	</head>
+	<body>
+		<!-- Base element for app -->
+		<div id="AppBase"></div>
+
+		<!-- main layout template -->
+		<script type="text/template" id="template-AppLayoutView">
+			<h1 id="title">DemocracyOS.org.uk</h1>
+			<h1 id="title">The Direct Democracy voting web based Application <br>for the UK and The Green Party</h1>
+			<h2 id="title">A UK spin off of <a href="http://www.democracyos.org">DemocracyOS.org</h2>
+			<hr width="90%">
+			<div id="Navigation">
+				<a id="nav-home" class="navButton" href="#home">Home</a>&nbsp;&nbsp;
+				<a id="nav-skills" class="navButton" href="#skills">Skills</a>&nbsp;&nbsp;
+				<a id="nav-resources" class="navButton" href="#resources">Resources</a>&nbsp;&nbsp;
+				<a id="nav-people" class="navButton" href="#people">People</a>&nbsp;&nbsp;
+				<a id="nav-contact" class="navButton" href="#contact">Contact</a>&nbsp;&nbsp;
+				<a id="nav-about" class="navButton" href="#about">About</a>
+			</div>
+			<hr width="90%">
+			<div id="ContentRegion"></div>
+		</script>
+
+		<!-- home screen template -->
+		<script type="text/template" id="template-HomeLayoutView">
+			<div id="home">
+			    <h1>Home</h1>
+    			<div id="video">
+			        <iframe style="text-align: center;" width="560" height="315" src="https://www.youtube.com/embed/WfGMYdalClU" frameborder="0" allowfullscreen></iframe>
+			    </div>
+			</div>
+		</script>
+
+		<!-- skills screen template -->
+		<script type="text/template" id="template-SkillsLayoutView">
+			<div class="skills">
+    			<h1>Skills</h1>
+    			<p>DemocracyOS UK is looking for people with the right skills to help with this project.<p>
+    			<p>These are the kind of skills we are looking for. If you have one or more of these skills and you are interested then please get in contact :-
+    			<h2>Technical Skills</h2>
+    			<ul>
+    			    <li>JavaScript - reasonable knowledge of JavaScript.</li>
+    			    <li>HTML and ideally HTML 5</li>
+    			    <li>CSS and ideally CSS 3</li>
+    			    <li>Jade HTML Templating</li>
+    			    <li>Styl CSS Templating system</li>
+    			    <li>component.js - component framework</li>
+    			    <li>Node.js and Node Application Libraries on NPM and GitHub</li>
+    			    <li>GIT - Source Code Management System</li>
+    			    <li>DemocracyOS framework itself</li>
+    			    <li>Knowledge of the UK Parlimentary system API's and information systems</li>
+    			    <li>Website functionality testing</li>
+    			    <li>Cloud Deployment</li>
+    			</ul>
+
+    			<h2>Non Software Programming Skills</h2>
+    			<ul>
+    			    <li>Testing website content</li>
+    			    <li>Copywriting</li>
+    			    <li>Proof Readers</li>
+    			    <li>Knowledge of the UK Parlimentary system</li>
+    			    <li>Administration of Parlimentary documentation</li>
+    			    <li>DemocracyOS administration</li>
+    			</ul>
+    		</div>
+		</script>
+
+		<script type="text/template" id="template-ResourcesLayoutView">
+			<div class="resources">
+    			<h1>Resources</h1>
+    			<p>This is a set of resources for people interested in DemocracyOS</p>
+    			<a href="http://democracyos.org/">http://democracyos.org/</a><br>
+    			<a href="http://github.com/democracyos">http://github.com/democracyos</a><br>
+    			<a href="http://github.com/UKDemocracyOS">http://github.com/UKDemocracyOS</a><br>
+    		</div>
+		</script>
+
+		<script type="text/template" id="template-ContactLayoutView">
+		    <div class="contact">
+		    	<h1>Contacts</h1>
+		    	<p>This is the contact page</p>
+		    </div>
+		</script>
+
+		<script type="text/template" id="template-PeopleLayoutView">
+			<div class="people">
+				<h1>People and roles</h1>
+				<ul>
+				<li>Chistopher Pane - Green Party Project Coordinator</li>
+    			<li>Aaron Nathaniel Gray - Project Lead, Architect, and Project Software Porter</li>
+    			<li>Peter David Carter - Frontend Development, Administrative Programmer, and Documentation Lead</li>
+				</ul>
+    		</div>
+		</script>
+
+		<script type="text/template" id="template-AboutLayoutView">
+			<div class="about">
+				<h1>About</h1>
+    		    <p>DemocracyOS UK is a revolutionary web-system aimed at changing the way our political system works.</p>
+    		    <p>The current UK political system is a vast, bizarre, often baffling mess of traditions and beliefs that
+    		    should have been dismantled years ago. All around us technology, people, the entire world is changing,
+    		    yet our political system has remained the same for hundreds of years.</p>
+    		    <p>DemocracyOS is changing that. With DemocracyOS you can show your party, and the world,
+    		    what you think of laws before they come to vote. More than that, you can also propose your
+    		    own laws, and see them voted for in real time by the public at large.</p>
+    		    <p>The system is adapted from the original pioneered by Partido de la Red,
+    		    an Argentinian grass-roots movement who use it for all their internal and political decision making.
+    		    The power and flexibility is such that it allows real-time exchange of view-points, and the creation of laws
+    		    that represent the genuine will of the people.</p>
+    		    <p>With DemocracyOS UK, we can change politics !</p>
+    		</div>
+		</script>
+
+		<!-- libraries -->
+		<script type="text/javascript" src="vendor/jquery.js"></script>
+		<script type="text/javascript" src="vendor/underscore.js"></script>
+		<script type="text/javascript" src="vendor/backbone.js"></script>
+		<script type="text/javascript" src="vendor/backbone.marionette.js"></script>
+
+		<!-- app code -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
